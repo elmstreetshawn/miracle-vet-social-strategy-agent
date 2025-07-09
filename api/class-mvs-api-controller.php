@@ -86,7 +86,7 @@ class MVS_API_Controller {
 
     // Helper function to make the GPT API call
     private static function call_gpt_api($prompt) {
-        $api_key = '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';
+        $api_key = '';
         $response = wp_remote_post('https://api.openai.com/v1/completions', [
             'headers' => [
                 'Authorization' => 'Bearer ' . $api_key,
